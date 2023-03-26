@@ -96,7 +96,7 @@ void fix_instr_aliases(uint32_t insnbits, opcode_t *op) {
 comb_logic_t fetch_instr(f_instr_impl_t *in, d_instr_impl_t *out) {
     bool imem_err = 0;
     uint64_t current_PC;
-    select_PC(/*Fill the rest of these in.*/, current_PC);
+    select_PC(/*Fill the rest of these in.*/, &current_PC);
     /* 
      * Students: This case is for generating HLT instructions
      * to stop the pipeline. Only write your code in the **else** case. 
